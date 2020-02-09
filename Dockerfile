@@ -5,7 +5,7 @@ FROM ubuntu:${CODE_VERSION}
 RUN  apt-get update -y && apt-get install nginx -y\
    && apt-get clean
 
-COPY src/ /var/www/html
+COPY src/ /var/www/html/
 
 
 EXPOSE 80
